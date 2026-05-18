@@ -4,34 +4,26 @@
 
 이 저장소는 **삼국한자 (CJK Characters)** 앱의 개인정보처리방침을 GitHub Pages 로 호스팅합니다.
 
-## 🔗 Privacy Policy URL — Play Console 등록용 풀네임
+## 🔗 Privacy Policy URL
 
-각 locale 별 풀 URL (Play Console 의 "다국어 등록정보 > 개인정보처리방침" 칸에 그대로 사용):
+**단일 파일 · 단일 URL** (다국어는 페이지 안의 버튼으로 전환):
 
-| Locale | Full URL |
-|---|---|
-| 🇰🇷 한국어 (ko) | <https://heyday07.github.io/cjk-hanja/privacy-ko.html> |
-| 🇺🇸 English (en) | <https://heyday07.github.io/cjk-hanja/privacy-en.html> |
-| 🇯🇵 日本語 (ja) | <https://heyday07.github.io/cjk-hanja/privacy-ja.html> |
-| 🇹🇼 繁體中文 (zh-TW) | <https://heyday07.github.io/cjk-hanja/privacy-zh.html> |
+- 🌐 <https://heyday07.github.io/cjk-hanja/>
 
-각 풀네임 페이지는 즉시 메인 `index.html` 로 redirect 되며 해당 locale 섹션이 활성화됩니다.
+페이지에 진입하면:
+- **버튼 4개** (한국어 / English / 日本語 / 繁體中文) 가 상단에 sticky 로 노출되어 즉시 전환 가능
+- 버튼을 누르지 않으면 `navigator.language` 자동 감지로 ko/en/ja/zh-TW 중 적합한 섹션 표시
+- 앱에서 진입할 때는 `?lang=xx` 쿼리로 강제 가능 (`?lang=ko` / `?lang=en` / `?lang=ja` / `?lang=zh`)
+
+Play Console 의 개인정보처리방침 URL 칸에는 위 단일 URL 하나만 입력하면 됩니다.
 
 ## 🏗️ 구조
 
-실제 콘텐츠는 **단일 파일** `index.html` 하나에 모두 들어있고 (4 locale × 13 조항 = 약 49KB), 상단 sticky 버튼 4개로 locale 을 전환합니다.
-
 ```
 cjk-hanja/
-├── index.html         ← 실제 콘텐츠 (단일 파일, 4 locale 통합)
-├── privacy-ko.html    ← 한국어 풀네임 (index.html?lang=ko 로 redirect)
-├── privacy-en.html    ← 영어 풀네임
-├── privacy-ja.html    ← 일본어 풀네임
-├── privacy-zh.html    ← 번체중국어 풀네임
+├── index.html  ← 단일 콘텐츠 파일 (4 locale × 13 조항, 약 49KB)
 └── README.md
 ```
-
-`index.html` 직접 진입 시 (`https://heyday07.github.io/cjk-hanja/`) `navigator.language` 자동 감지로 ko/en/ja/zh 중 적합한 섹션을 표시합니다. URL `?lang=xx` 쿼리로 강제 가능.
 
 ## 📱 앱 정보
 
