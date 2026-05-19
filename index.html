@@ -146,7 +146,7 @@
     <!-- ==================== 한국어 버전 ==================== -->
     <div id="section-ko" class="section-ko">
       <h1>개인정보처리방침</h1>
-      <p class="subtitle">삼국한자 (CJK Characters) | 시행일: 2026년 5월 18일 | 버전 1.0</p>
+      <p class="subtitle">삼국한자 (CJK Characters) | 시행일: 2026년 5월 19일 | 버전 1.0 (광고 SDK + Crashlytics 추가)</p>
 
       <p>RedMoon Studio(이하 "회사")는 「개인정보 보호법」 제30조에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리하기 위하여 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
 
@@ -252,12 +252,14 @@
       <p>회사는 사용자의 개인정보를 제3자에게 제공하지 않습니다.</p>
 
       <h3>제3자 서비스(SDK)</h3>
-      <p>삼국한자 v1.0 은 다음 한 가지 Google 라이브러리만 사용합니다.</p>
+      <p>삼국한자는 다음 Google 라이브러리를 사용합니다.</p>
       <ul>
         <li><strong>Google ML Kit (Digital Ink Recognition):</strong> 한자 필기 인식. 사용자의 필기 스트로크 데이터는 기기 내부에서만 처리되며 Google 로 전송되지 않습니다. 단, 인식 모델 1회 다운로드 시점에 Google Play Services 와 통신합니다. Google 의 ML Kit 개인정보 처리방침: <a href="https://developers.google.com/ml-kit/terms" target="_blank">developers.google.com/ml-kit/terms</a></li>
+        <li><strong>Google AdMob (광고):</strong> 앱 내 배너 광고 및 학습 세션 전면 광고 표시. 사용자의 광고 식별자(Android Advertising ID)와 대략적 지역 정보, 디바이스 정보가 AdMob 으로 전송되어 맞춤 광고 표시에 사용될 수 있습니다. 사용자는 Android 설정 → Google → 광고 메뉴에서 광고 ID 재설정 또는 맞춤 광고 거부가 가능합니다. Google 의 광고 개인정보 처리방침: <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob/answer/6128543</a></li>
+        <li><strong>Firebase Crashlytics (충돌 보고):</strong> 앱이 비정상 종료될 경우 안정성 개선을 위해 충돌 스택 트레이스, 디바이스 모델 / OS 버전 / 앱 버전 등 비식별 진단 정보를 Google 로 전송합니다. 이름, 이메일, 학습 데이터 등 개인 식별 정보는 일체 포함되지 않습니다. Firebase 개인정보 처리방침: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
-      <p><strong>삼국한자 v1.0 은 광고 SDK(AdMob 등), 분석 SDK(Firebase Analytics 등), 충돌 보고 SDK(Crashlytics 등)를 일체 사용하지 않습니다.</strong></p>
-      <p>향후 버전에서 위 SDK 가 추가될 경우, 본 개인정보처리방침을 갱신하고 앱 업데이트 릴리스 노트를 통해 사전 공지합니다.</p>
+      <p><strong>삼국한자는 분석 SDK(Firebase Analytics 등)와 리워드/추적 SDK 를 사용하지 않습니다.</strong></p>
+      <p>향후 위 SDK 구성이 변경될 경우 본 개인정보처리방침을 갱신하고 앱 업데이트 릴리스 노트를 통해 사전 공지합니다.</p>
 
       <h2>제6조 (사용자가 선택적으로 공유하는 데이터)</h2>
       <p>다음은 사용자의 명시적 액션이 있을 때만 처리됩니다.</p>
@@ -326,7 +328,7 @@
     <!-- ==================== English Version ==================== -->
     <div id="section-en" class="section-en">
       <h1>Privacy Policy</h1>
-      <p class="subtitle">CJK Characters | Effective Date: May 18, 2026 | Version 1.0</p>
+      <p class="subtitle">CJK Characters | Effective Date: May 19, 2026 | Version 1.0 (added Ad SDK + Crashlytics)</p>
 
       <p>RedMoon Studio ("Company", "we", "us") operates the CJK Characters mobile application. This Privacy Policy explains how we handle information when you use our app.</p>
 
@@ -432,12 +434,14 @@
       <p>We do not share any personal information with third parties.</p>
 
       <h3>Third-Party Services (SDKs)</h3>
-      <p>CJK Characters v1.0 uses only one Google library:</p>
+      <p>CJK Characters uses the following Google libraries:</p>
       <ul>
         <li><strong>Google ML Kit (Digital Ink Recognition):</strong> Handwritten character recognition. Your stroke data is processed entirely on-device and is never transmitted to Google. The app does communicate with Google Play Services once when downloading the recognition model. Google's ML Kit privacy policy: <a href="https://developers.google.com/ml-kit/terms" target="_blank">developers.google.com/ml-kit/terms</a></li>
+        <li><strong>Google AdMob (Advertising):</strong> Displays banner ads on dictionary screens and interstitial ads during study sessions. Your Android Advertising ID, approximate geographic location, and device information may be sent to AdMob for ad personalization. You can reset your advertising ID or opt out of personalized ads via Android Settings → Google → Ads. Google's advertising privacy policy: <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob/answer/6128543</a></li>
+        <li><strong>Firebase Crashlytics (Crash Reporting):</strong> When the app crashes, non-identifying diagnostic data — crash stack traces, device model / OS version / app version — is sent to Google to help us improve stability. No personally identifying information (name, email, study data) is included. Firebase privacy policy: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
-      <p><strong>CJK Characters v1.0 does NOT use any advertising SDKs (e.g., AdMob), analytics SDKs (e.g., Firebase Analytics), or crash reporting SDKs (e.g., Crashlytics).</strong></p>
-      <p>If any such SDKs are added in future versions, this Privacy Policy will be updated and announced in app release notes in advance.</p>
+      <p><strong>CJK Characters does NOT use analytics SDKs (e.g., Firebase Analytics) or rewarded / tracking SDKs.</strong></p>
+      <p>If this SDK list changes in the future, this Privacy Policy will be updated and announced in app release notes in advance.</p>
 
       <h2>6. Data You Voluntarily Share</h2>
       <p>The following data is processed only when you take explicit action:</p>
@@ -498,7 +502,7 @@
     <!-- ==================== 日本語版 ==================== -->
     <div id="section-ja" class="section-ja">
       <h1>プライバシーポリシー</h1>
-      <p class="subtitle">日中韓漢字 (CJK Characters) | 施行日: 2026年5月18日 | バージョン 1.0</p>
+      <p class="subtitle">日中韓漢字 (CJK Characters) | 施行日: 2026年5月19日 | バージョン 1.0 (広告 SDK + Crashlytics 追加)</p>
 
       <p>RedMoon Studio(以下「当社」)は、日中韓漢字モバイルアプリケーションを運営しています。本プライバシーポリシーは、本アプリご利用時の情報の取り扱いについて説明します。</p>
 
@@ -604,12 +608,14 @@
       <p>当社はユーザーの個人情報を第三者に提供しません。</p>
 
       <h3>第三者サービス(SDK)</h3>
-      <p>日中韓漢字 v1.0 は次の1つのGoogleライブラリのみを使用します。</p>
+      <p>日中韓漢字は次のGoogleライブラリを使用します。</p>
       <ul>
         <li><strong>Google ML Kit (Digital Ink Recognition):</strong> 漢字手書き認識。ユーザーの手書きストロークデータは端末内のみで処理され、Googleに送信されません。ただし、認識モデルの1回限りのダウンロード時にGoogle Play Servicesと通信します。GoogleのML Kitプライバシーポリシー: <a href="https://developers.google.com/ml-kit/terms" target="_blank">developers.google.com/ml-kit/terms</a></li>
+        <li><strong>Google AdMob (広告):</strong> 辞書画面のバナー広告および学習セッションの全画面広告を表示します。ユーザーの広告識別子(Android Advertising ID)、おおよその地域情報、デバイス情報が AdMob に送信され、広告のパーソナライズに利用される場合があります。Android の 設定 → Google → 広告 メニューから広告 ID のリセットやパーソナライズ広告のオプトアウトが可能です。Google の広告プライバシーポリシー: <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob/answer/6128543</a></li>
+        <li><strong>Firebase Crashlytics (クラッシュレポート):</strong> アプリが異常終了した際に、安定性向上のためクラッシュのスタックトレース、デバイスモデル / OS バージョン / アプリバージョンなどの非識別の診断情報を Google に送信します。氏名・メール・学習データなど個人を識別できる情報は一切含まれません。Firebase プライバシーポリシー: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
-      <p><strong>日中韓漢字 v1.0 は広告SDK(AdMobなど)、分析SDK(Firebase Analyticsなど)、クラッシュレポートSDK(Crashlyticsなど)を一切使用しません。</strong></p>
-      <p>将来のバージョンで上記SDKが追加される場合、本プライバシーポリシーを更新し、アプリのアップデートリリースノートを通じて事前に通知します。</p>
+      <p><strong>日中韓漢字は分析 SDK(Firebase Analyticsなど)やリワード/トラッキング SDK は使用しません。</strong></p>
+      <p>今後 SDK 構成が変更される場合、本プライバシーポリシーを更新し、アプリのアップデートリリースノートを通じて事前に通知します。</p>
 
       <h2>第6条 (ユーザーが任意で共有するデータ)</h2>
       <p>以下はユーザーの明示的なアクションがある場合のみ処理されます。</p>
@@ -670,7 +676,7 @@
     <!-- ==================== 繁體中文版 ==================== -->
     <div id="section-zh" class="section-zh">
       <h1>私隱政策</h1>
-      <p class="subtitle">中日韓漢字 (CJK Characters) | 生效日期: 2026年5月18日 | 版本 1.0</p>
+      <p class="subtitle">中日韓漢字 (CJK Characters) | 生效日期: 2026年5月19日 | 版本 1.0 (新增廣告 SDK + Crashlytics)</p>
 
       <p>RedMoon Studio(以下簡稱「本公司」)營運中日韓漢字行動應用程式。本私隱政策說明您使用本應用程式時資訊的處理方式。</p>
 
@@ -776,12 +782,14 @@
       <p>本公司不會將使用者的個人資訊提供給第三方。</p>
 
       <h3>第三方服務(SDK)</h3>
-      <p>中日韓漢字 v1.0 僅使用以下一個 Google 函式庫。</p>
+      <p>中日韓漢字使用以下 Google 函式庫:</p>
       <ul>
         <li><strong>Google ML Kit (Digital Ink Recognition):</strong> 漢字手寫辨識。使用者的筆劃資料僅於裝置內處理,不會傳輸至 Google。但於辨識模型一次性下載時會與 Google Play Services 通訊。Google 的 ML Kit 私隱政策: <a href="https://developers.google.com/ml-kit/terms" target="_blank">developers.google.com/ml-kit/terms</a></li>
+        <li><strong>Google AdMob (廣告):</strong> 於辭典畫面顯示橫幅廣告,於學習工作階段顯示插頁廣告。使用者的廣告識別碼(Android Advertising ID)、概略地理位置與裝置資訊可能會傳送至 AdMob 用於廣告個人化。使用者可於 Android 的 設定 → Google → 廣告 重設廣告 ID 或拒絕個人化廣告。Google 的廣告私隱政策: <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob/answer/6128543</a></li>
+        <li><strong>Firebase Crashlytics (當機回報):</strong> 應用程式異常終止時,為改善穩定性會將當機堆疊追蹤、裝置型號 / OS 版本 / 應用程式版本等非識別性診斷資料傳送至 Google。不會包含姓名、電子郵件、學習資料等任何個人識別資訊。Firebase 私隱政策: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
       </ul>
-      <p><strong>中日韓漢字 v1.0 不使用任何廣告 SDK(如 AdMob)、分析 SDK(如 Firebase Analytics)、當機報告 SDK(如 Crashlytics)。</strong></p>
-      <p>若未來版本新增上述 SDK,將更新本私隱政策並透過應用程式更新版本說明預先通知。</p>
+      <p><strong>中日韓漢字不使用分析 SDK(如 Firebase Analytics)及獎勵/追蹤 SDK。</strong></p>
+      <p>未來若上述 SDK 組成有變更,將更新本私隱政策並透過應用程式更新版本說明預先通知。</p>
 
       <h2>第6條 (使用者選擇性分享的資料)</h2>
       <p>以下僅在使用者有明確操作時處理。</p>
